@@ -21,9 +21,9 @@ const Card = ({ active, doctorId }) => {
                 <>
                     <div className="doctor__header">
                         <section className="doctor__title">
-                            <div>
+                            <div >
                                 <figure>
-                                    <img src={CardTop} alt="this is doctor" />
+                                    <img style={{outline: `3px solid ${currentDoctor.borderColor}`}} src={CardTop} alt="this is doctor" />
                                 </figure>
                             </div>
                             <div className="doctor__description">
