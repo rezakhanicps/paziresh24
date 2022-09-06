@@ -6,9 +6,16 @@ h3 {
 .doctor {
     cursor: pointer;
     width: 80vw;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     margin: 10vw auto;
     padding: 1rem;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
     &__header {
         margin-bottom: 1rem;
         display: flex;
@@ -58,7 +65,6 @@ h3 {
         }
         width: 100%;
         margin-bottom: 1rem;
-
     }
 
     &__first_date {
@@ -90,6 +96,11 @@ h3 {
         border: none;
         border-radius: 4px;
         margin-top: 0.5rem;
+        transition: all 0.2s ease-out;
+        &:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
     }
 }
 
@@ -101,6 +112,5 @@ $small: 400px;
             justify-content: center;
             flex-wrap: wrap;
         }
-       
     }
-  }
+}
